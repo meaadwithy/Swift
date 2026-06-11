@@ -18,7 +18,6 @@ colors.isEmpty
 colors.removeAll()
 
 print(colors)
-print(colors[0])
 
 
 //to make empty list
@@ -26,5 +25,11 @@ print(colors[0])
 var list = [String]()
 
 -------------------------
-//dictionary list
+//dictionary list (key : value)
 
+var colors = ["red" : 100, "green": 200, "blue":300]
+colors["yellow"] = 400
+print(colors["green"])
+
+print(colors.count)
+colors.removeValue(forKey: "red")
