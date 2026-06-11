@@ -1,0 +1,30 @@
+
+// Array list
+var colors = ["red", "green", "blue"]
+colors.append("white")
+colors.append("black")
+colors.insert("yellow", at: 2)
+colors.remove(at: 3)
+print(colors)
+print(colors[0])
+
+colors.removeFirst()
+colors.removeLast()
+colors.shuffle()
+colors.sort()
+colors.count
+
+colors.isEmpty
+colors.removeAll()
+
+print(colors)
+print(colors[0])
+
+
+//to make empty list
+// example { var list = [any]() }  any --> Int , Double , String ...
+var list = [String]()
+
+-------------------------
+//dictionary list
+
