@@ -2,6 +2,7 @@ class Car{
     var color = "white"
     
     init(myColor : String){
+        self.color = myColor
         print("choose color")
         print(myColor)
     }
