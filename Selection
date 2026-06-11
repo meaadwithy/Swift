@@ -22,10 +22,3 @@ default:
     print("error")
 }
 
-// Array list
-var colors = ["red", "green", "blue"]
-colors.append("white")
-colors.append("black")
-colors.insert("yellow", at: 2)
-colors.remove(at: 3)
-print(colors)
