@@ -10,6 +10,9 @@ class Car{
     func moveForward(){
         print("Moving forward")
     }
+    var name : String {
+        return "My car  is \(color) color"
+    }
 }
 var myCar = Car(myColor : "red")
 myCar.moveForward()
@@ -20,3 +23,4 @@ var myCar2 = Car(myColor : "rose")
 print("_______")
 
 var myCar3 = Car(myColor : "coral")
+print(myCar3.name)
