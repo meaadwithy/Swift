@@ -1,0 +1,7 @@
+//open acsess to all other classes & u can override and make it as subclasses
+//public acsess to all other classes but can't override or make sub
+
+//private only in same class access but need to overrid it in func first like we used to in java with constructers 
+
+//fileprivate only in same package access
+//internal is the default 
