@@ -10,3 +10,11 @@
 //to accsess for override & prevents it
 //open acsess to all other classes & u can override and make it as subclasses
 //final prevents override and make it as subclasses
+
+//optional
+var name : String? = "Meaad"
+print (name)
+print (name!)
+
+var name : String? = nil
+print (name)
