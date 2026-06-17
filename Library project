@@ -1,7 +1,8 @@
-class Library {
-    var id: Int
-    var title: String
-    var author: String
-    var price: Double
-    var quantity: Int
+
+class Book {
+    open var id: Int
+    open var title: String
+    open var author: String
+    open var price: Double?
+    open var quantity: Int?
 }
