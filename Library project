@@ -71,7 +71,7 @@ class Library{
                 return
             }
             if Title != nil && book.title.lowercased() == Title!.lowercased() {
-                print(book.title)
+                print(book.toString)
                 return
             }
             if Author != nil && book.author.lowercased() == Author!.lowercased() {
@@ -90,3 +90,5 @@ library.addBook(id: 4, title: "Zero to One", author: "Peter Thiel", price: 45.0,
 library.addBook(id: 5, title: "You don't know JS", author: "Kyle Simpson", price: 39.9, quantity: 3)
 
 library.showBooks()
+
+library.lookForBook(Id: nil, Title: nil, Author: "Kyle simpson")
