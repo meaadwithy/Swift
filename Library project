@@ -30,6 +30,7 @@ class Library{
         books.append(book)
         
     }
+    
     func deleteBook(id : Int){
         
         for i in 0..<books.count{
@@ -42,8 +43,9 @@ class Library{
         return print("the book has not been found")
         
     }
+    
     func editBook(id : Int, newTitle : String, newAuthor : String,newPrice : Double?, newQuantity : Int?){
-        
+
         for book in books{
             if book.id == id{
                 
@@ -52,18 +54,20 @@ class Library{
                 book.price = newPrice
                 book.quantity = newQuantity
                 
-                print("the book has been edited")
+                print("the book has been edited in the system")
                 return
             }
         }
         return print("the book has not been edited")
         
     }
+    
     func showBooks(){
         for book in books{
             print(book.toString)
         }
     }
+    
     func lookForBook(Id : Int?, Title : String?, Author : String?){
         for book in books {
             if Id != nil && book.id == Id!{
@@ -80,6 +84,35 @@ class Library{
             }
         }
     }
+    
+    func sellBook (id : Int, quantityToBuy : Int){
+        for book in books {
+            if book.id == id{
+                if book.quantity == nil || book.price == nil {
+                    print("book information is incomplete")
+                    return
+                }
+                if book.quantity! >= quantityToBuy{
+                    let total = book.price! * Double(quantityToBuy)
+                    book.quantity! -= quantityToBuy
+                    
+                    print("receip")
+                    print("Book: \(book.title)")
+                    print("Quantity: \(quantityToBuy)")
+                    print("Total: \(total)")
+                    
+                    editBook(id: book.id, newTitle: book.title, newAuthor: book.author, newPrice: book.price, newQuantity: book.quantity)
+                    print(book.toString)
+                }else{
+                    print("book quantity in stock is insufficient")
+                }
+                return
+            }
+        }
+        print("book not found")
+        return
+    }
+    
 }
 
 var library = Library()
@@ -90,5 +123,11 @@ library.addBook(id: 4, title: "Zero to One", author: "Peter Thiel", price: 45.0,
 library.addBook(id: 5, title: "You don't know JS", author: "Kyle Simpson", price: 39.9, quantity: 3)
 
 library.showBooks()
+print("\n")
 
 library.lookForBook(Id: nil, Title: nil, Author: "Kyle simpson")
+print("\n")
+library.sellBook(id: 3, quantityToBuy: 4)
+print("\n")
+library.sellBook(id: 4, quantityToBuy: 4)
+library.sellBook(id: 6, quantityToBuy: 5)
