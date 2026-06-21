@@ -10,4 +10,20 @@ enum size {
   case M
   case L
   case XL
+  // you can do case XS,S,M,L,XL
+}
+var personSize : size 
+personSize = .S
+
+switch personSize {
+  case .XS:
+  
+  case .S:
+  
+  case .M:
+  
+  case .L:
+  
+  case .XL:
+  
 }
