@@ -15,14 +15,18 @@ Swift
     ├── 7 Access & optional.swift
     └── 8 library project.swift 
 ```
+
 ```text
 Swift
 ├── Main
-└── Basics
-    ├── 9 enumeration.swift
-    ├──
-    ├──
-    └── 
+└── Basics part 2
+    ├── 90 enumeration.swift
+    ├── 91 tuples.swift
+    ├── 92
+    ├── 93
+    ├── 94
+    ├── 95
+    └── 96
 ```  
 ## library project
 ```text
