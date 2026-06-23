@@ -1,7 +1,6 @@
 # Swift
 ## Swift coding
 Swift
-If **Swift** is the top folder, the tree would look like:
 
 ```text
 Swift
@@ -12,15 +11,10 @@ Swift
     ├── 3 Loop.swift
     ├── 4 List.swift
     ├── 5 classes & Object.swift
-    ├── 6
-    ├── 7
-    ├── 8
-    └── 9 
+    ├── 6 Inheritance.swift
+    ├── 7 Access & optional.swift
+    └── 8 library project.swift 
 ```
-
-
-
-This will render correctly on GitHub.
 
               
 ## library project
