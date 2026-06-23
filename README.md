@@ -1,6 +1,8 @@
 # Swift
+it's to learn and make project in swift language.
+
 ## Swift coding
-Swift include 
+Swift repository include 
 
 ```text
 Swift
