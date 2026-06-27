@@ -1,2 +1,0 @@
-
-// its func inside func
