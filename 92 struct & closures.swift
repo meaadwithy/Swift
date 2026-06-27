@@ -1,5 +1,6 @@
 // if it class will look like this
 /*
+class can inherited but struct cant
 class UserInfo {
     var name : String = ""
     var email : String = ""
@@ -28,6 +29,12 @@ print(user1.email)
 
 
 so that no error will show 
+
+last when u do this
+var user2 = user1
+user1.name = "meme"
+then user2.name = "meme" too bc thye have same reference
+but for struct user2.name = "Meaad"
 */
 
 // here its struct
