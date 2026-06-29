@@ -1,1 +1,24 @@
 // its func inside func
+func op (num1 : Int , num2 : Int , opration: (Int , Int) -> Int) -> Int{
+    return opration(num1,num2)
+}
+func claculate (n1 : Int , n2 : Int) -> Int{
+    return n2 * n1
+}
+
+op(num1: 2,num2: 3,opration: claculate)
+/* so the order for executed goes like this line || op(num1: 2,num2: 3,opration: claculate)
+then return opration(num1,num2) which mean claculate(num1,num2) 
+go inside func claculate and return n2 * n1 which 6
+so he go back to return opration(num1,num2) and return 6 so
+op(num1: 2,num2: 3,opration: claculate) return 6
+*/
+
+// in closure form it will look like this
+func claculate (num1 : Int , num2 : Int , opration: (Int , Int) -> Int) -> Int{
+    return opration(num1,num2)
+}
+claculate(num1 : 2 , num2 : 3 , opration: {
+    (num1: Int , num2: Int) -> Int in
+    return num1 * num2
+})
