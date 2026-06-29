@@ -21,8 +21,8 @@ func claculate(num1: Int, num2: Int, opration: (Int, Int) -> Int) -> Int {
 }
 
 let multiplication = claculate(num1: 2, num2: 3, opration: {
-    (num1: Int, num2: Int) -> Int in
-    return num1 * num2
+    (num1: Int, num2: Int) -> Int in // u can delete all and do { $0 * $1 } only
+    num1 * num2 // u can delete return as short
 })
 print(multiplication)
 
