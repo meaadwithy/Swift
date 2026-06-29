@@ -15,10 +15,16 @@ op(num1: 2,num2: 3,opration: claculate) return 6
 */
 
 // in closure form it will look like this
-func claculate (num1 : Int , num2 : Int , opration: (Int , Int) -> Int) -> Int{
-    return opration(num1,num2)
+
+func claculate(num1: Int, num2: Int, opration: (Int, Int) -> Int) -> Int {
+    return opration(num1, num2)
 }
-claculate(num1 : 2 , num2 : 3 , opration: {
-    (num1: Int , num2: Int) -> Int in
+
+let multiplication = claculate(num1: 2, num2: 3, opration: {
+    (num1: Int, num2: Int) -> Int in
     return num1 * num2
 })
+print(multiplication)
+
+let addition = claculate(num1: 2, num2: 3, opration: { $0 + $1 }) // short { $0 + $1 }
+print(addition)
