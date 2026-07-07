@@ -28,3 +28,21 @@ print(multiplication)
 
 let addition = claculate(num1: 2, num2: 3, opration: { $0 + $1 }) // short { $0 + $1 }
 print(addition)
+
+// escaping is put time for when excite
+
+func waitTime(sentence: @escaping (String) -> Void) {
+    print("Hello world")
+
+    DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+        sentence("I'm meaad")
+    }
+
+    print("aaa yess, Hello world again")
+}
+
+waitTime {
+    print($0)
+}
+
+
