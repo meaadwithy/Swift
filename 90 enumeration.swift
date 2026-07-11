@@ -59,3 +59,24 @@ enum workingDay {
   case thursday
 }
 var workingDay = workingDay.sunday(hours: 8)
+
+// example 
+enum Direction {
+    case north
+    case south
+    case east
+    case west
+}
+let move = Direction.north
+switch move {
+    case .north:
+    print("Move north")
+    case .south:
+    print("Move south")
+    case .east:
+    print("Move east")
+    case .west:
+    print("Move west")
+}
+
+
