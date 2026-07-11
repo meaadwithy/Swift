@@ -16,10 +16,10 @@ Swift
 └── Basics (part 2)
     ├── 90 enumeration.swift
     ├── 91 tuples.swift
-    ├── 92
-    ├── 93
-    ├── 94
-    ├── 95
+    ├── 92 struct.swift
+    ├── 93 Closure.swift
+    ├── 94 Error.swift
+    ├── 95 Protocol.swift
     └── 96
 ```  
 
