@@ -79,4 +79,37 @@ switch move {
     print("Move west")
 }
 
+enum Payment{
+    case cash(amount: Double)
+    case card(number: String)
+    
+}
+let pay = Payment.cash(amount: 250.0)
 
+switch pay{
+case .cash(let amount):
+    print(amount)
+case .card(let number):
+    print(number)
+}
+
+enum Weather {
+    case sunny
+    case rainy
+    case cloudy
+}
+
+func advice(weather: Weather) {
+
+    if weather == .sunny {
+        print("Wear sunglasses")
+
+    } else if weather == .rainy {
+        print("Take an umbrella")
+
+    } else {
+        print("Nice day")
+    }
+}
+
+advice(weather: .sunny)
