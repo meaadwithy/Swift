@@ -7,6 +7,7 @@ Codable
 Equatable
 Error
 */
+// the protocol kinda look like override in java so u do empty func and then use it in other classes
 protocol Flyable{
     func Fly()
 }
@@ -24,9 +25,18 @@ let plane = Plane()
 plane.Fly()
 let bird = Bird()
 bird.Fly()
+// lets use extensions now do
+extension Bird {
+    func wings (){
+        print("yes")
+    }
+}
+bird.wings()
+// can do extension for class, enum, struct, and protocols
 
 
 // protocol with delegate.
+
 protocol KitchenDelegate {
     func didCookFood(foodName: String)
 }
