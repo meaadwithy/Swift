@@ -34,6 +34,24 @@ extension Bird {
 bird.wings()
 // can do extension for class, enum, struct, and protocols
 
+//extension alone will look like this
+extension Double {
+    var km : Double {
+        return self / 1000.0
+    }
+}
+var m = 10000.0 .km
+print(m)
+
+//extension with methode will look like this
+extension Int {
+    func MyNumberIs(){
+        print("my number is \(self)")
+    }
+}
+var number = 22 // or 22.MyNumberIs()
+number.MyNumberIs()
+// or  var number = 22.MyNumberIs()
 
 // protocol with delegate.
 
